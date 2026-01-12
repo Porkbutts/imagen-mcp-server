@@ -33,7 +33,13 @@ export GEMINI_API_KEY="your-api-key-here"
 ## Usage with Claude Code
 
 ```bash
-claude mcp add-json imagen '{"command":"node","args":["/path/to/imagen-mcp-server/dist/index.js"],"env":{"GEMINI_API_KEY":"your-api-key-here"}}'
+claude mcp add-json imagen '{
+  "command": "node",
+  "args": ["/path/to/imagen-mcp-server/dist/index.js"],
+  "env": {
+    "GEMINI_API_KEY": "your-api-key-here"
+  }
+}'
 ```
 
 ## Available Tools
